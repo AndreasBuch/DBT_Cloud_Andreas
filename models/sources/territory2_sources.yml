@@ -1,10 +1,10 @@
 version: 2
 
 sources:
-    - name: pharma_commercial
+    - name: PHARMA_COMMERCIAL
       description: Example data from Pharma CRM
-      database: pharma_commercial
-      schema: raw_veeva_crm
+      database: PHARMA_COMMERCIAL
+      schema: RAW_VEEVA_CRM
       tables:
           - name: territory2
             description: All territories.

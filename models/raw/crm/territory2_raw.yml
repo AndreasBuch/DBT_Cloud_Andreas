@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: territory2_raw
+    description: Raw Territory2 data
+    config:
+      materialized: ephemeral
+    columns:
+      - name: Id
+        description: Primary key
+        tests:
+          - unique:
+              config:
+                severity: warn
+                store_failures: true
