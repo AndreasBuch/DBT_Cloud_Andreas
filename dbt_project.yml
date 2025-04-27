@@ -2,7 +2,7 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'pharma_commercial'
+name: 'PHARMA_COMMERCIAL'
 version: '1.0.0'
 config-version: 2
 
@@ -28,6 +28,15 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 
+#tests:
+#  +store_failures: true  # all tests
+#  +severity: warn
+#  
+#  <package_name>:
+#    +store_failures: false # tests in <package_name>
+#    +severity: warn
+
+
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
@@ -39,5 +48,5 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  pharma_commercial:
+  PHARMA_COMMERCIAL:
     +materialized: table

@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+    - name: PHARMA_COMMERCIAL
+      description: Example data from Pharma CRM
+      database: PHARMA_COMMERCIAL
+      schema: RAW_VEEVA_CRM
+      tables:
+          - name: territory2
+            description: All territories.
+          - name: call2_vod
+            description: "Call data" 
+          - name: recordtype
+            description: "Record Type information - Mapping"             

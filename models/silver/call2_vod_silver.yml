@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: call2_vod_silver
+    description: Silver-level cleaned data for call2_vod
+    data_tests:
+      - call2_vod_row_count_after_join:
+          base_model: "call2_vod_cleaned"  # Base model before the join
+          reference_model: "call2_vod_silver"  # Model after the join

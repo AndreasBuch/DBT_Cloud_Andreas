@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: call2_vod_raw
+    description: "Raw call data from the VOD system"
+    config:
+      materialized: ephemeral    
+    columns:
+      - name: id
+        description: "Unique ID for each call record"
+        data_tests:
+          - unique:
+              config:
+                severity: warn
+                store_failures: true
+      - name: territory_vod__c
+        data_tests:
+          - relationships:
+              to: ref('territory2_raw')
+              field: name
+              severity: warn
+              store_failures: true 
