@@ -9,6 +9,7 @@
     {% for table in failure_tables %}
       {% set parts = table.split('_') %}
       {% set test_type = parts[0] %}
+
       {% set field_name = get_failure_field_name(test_type | lower) %}
       
       {% set select_sql %}

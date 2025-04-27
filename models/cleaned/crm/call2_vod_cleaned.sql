@@ -1,11 +1,11 @@
 with base as (
     select *
-    from {{ ref('territory2_raw') }}
+    from {{ ref('call2_vod_raw') }}
 ),
 
 -- Reference the new ephemeral model for failures
 excluded as (
-    select Id from {{ ref('failures_territory2_raw') }}
+    select Id from {{ ref('failures_call2_vod_raw') }}
 ),
 
 final as (

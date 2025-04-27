@@ -13,6 +13,6 @@
     {% else %}
       {% set table_names = [] %}
     {% endif %}
-    
+
     {{ return(table_names) }}
 {% endmacro %}

@@ -1,7 +1,7 @@
 {% macro get_failure_field_name(test_type) %}
   {% if test_type == 'unique' %}
     {{ return('UNIQUE_FIELD') }}
-  {% elif test_type == 'not_null' %}
+  {% elif test_type == 'not' %}
     {{ return('NOT_NULL_FIELD') }}
   {% elif test_type == 'accepted_values' %}
     {{ return('ACCEPTED_VALUES_FIELD') }}
